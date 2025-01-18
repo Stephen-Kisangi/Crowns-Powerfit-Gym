@@ -50,7 +50,6 @@ body {
     margin-bottom: 20px;
     font-weight: bold;
     color: black;
-    font-family: 'Dancing Script', cursive;
 }
 
 .hero .explore-btn {
@@ -287,7 +286,6 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
 }
 
 .footer-content {

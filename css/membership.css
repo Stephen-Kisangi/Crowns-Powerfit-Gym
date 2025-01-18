@@ -21,7 +21,7 @@ body {
     background-image: url('../images/other/register.png');
     background-size: cover;
     background-position: center;
-    color: black;
+    color: rgb(10, 10, 10);
     text-align: center;
     background-attachment: fixed;
     padding: 100px 20px;
@@ -34,26 +34,28 @@ body {
     left: 0;
     width: 100%;
     height: 29%;
-    background: rgba(250, 248, 248, 0.479); 
+    /*background: #f2f5ee;*/
     z-index: 1; 
 }
 
 .hero h2 {
-    font-size: 42px;
+    font-size: 32px;
     margin-bottom: 10px;
+    color: rgb(3, 3, 3);
+    font-family: 'Dancing Script', cursive;
 }
 
 .hero p {
     font-size: 18px;
     margin-bottom: 20px;
     font-weight: bold;
-    color: rgb(4, 4, 4);
+    color: black;
     font-family: 'Dancing Script', cursive;
 }
 
 .hero .explore-btn {
     font-size: 20px;
-    background-color: #ff8c00;
+    background-color: #d33212;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -68,6 +70,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+   
 }
 
 .form-wrapper {
@@ -76,25 +79,20 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
+    /*background-image: url('../images/slideshow/images.jpeg');
+    background-size: cover;*/
 }
 
 .membership-form-container {
     background: #ffffff;
     padding: 20px 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(227, 219, 219, 0.1);
     width: 100%;
     max-width: 600px;
     text-align: left;
     box-sizing: border-box;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
 }
 
 .membership-form-container h1 {
@@ -173,6 +171,13 @@ footer {
     margin-top: 5px;
 }
 
+/* Container styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header styles */
 header {
     background-color: #3e4338;
     padding: 16px 0;
@@ -196,8 +201,10 @@ header nav .logo a {
     font-size: 32px;
     text-decoration: none;
     font-weight: bold;
+    /*font-family: 'Dancing Script', cursive;*/
 }
 
+/* Navigation links */
 header nav .nav-links {
     list-style: none;
     display: flex;
@@ -217,11 +224,53 @@ header nav .nav-links li a:hover {
     border-bottom: 2px solid #04aa6d;
 }
 
-.back-button, .next-button {
-    background-color: #0056b3;
+/* Hamburger button */
+.hamburger {
+    display: none;
+    font-size: 28px;
     color: white;
-    padding: 8px 16px;
-    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Hide nav links and show hamburger */
+    header nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #3e4338;
+        width: 100%;
+        padding: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    header nav .nav-links.show {
+        display: flex;
+    }
+
+    header nav .nav-links li {
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+.back-button, .next-button {
+    background-color: #4c4f4c;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-flex;
@@ -230,12 +279,12 @@ header nav .nav-links li a:hover {
 }
 
 .back-button:hover, .next-button:hover {
-    background-color: #00408d;
+    background-color: #515749;
 }
 
 footer {
-    background-color: #333;
-    color: #0b32f1;
+    background-color:#3e4338;
+    color: white;
     padding: 20px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -283,11 +332,9 @@ footer {
     margin-bottom: 5px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
 .social-media .social-link {
     display: block;
-    color: #0056b3;
+    color: white;
     font-size: 16px;
     font-family: 'Dancing Script', cursive;
     margin-top: 5px;
@@ -298,7 +345,7 @@ footer {
 }
 
 .social-media .social-link:hover {
-    color: #e67e22;
+    color: #d33212;
 }
 
 @media (max-width: 768px) {
@@ -334,12 +381,12 @@ footer {
 
 .scroll-to-top {
     position: fixed;
-    bottom: 30px; 
-    right: 30px;  
+    bottom: 10px; 
+    right: 10px;  
     background-color: white; 
     color: black;
-    font-size: 20px; 
-    padding: 20px 30px; 
+    font-size: 12px; 
+    padding: 10px 15px; 
     border-radius: 50%; 
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -352,11 +399,11 @@ footer {
 }
 
 .scroll-to-top i {
-    font-size: 40px; 
+    font-size: 15px; 
 }
 
 .scroll-to-top:hover {
-    background-color: black; 
+    background-color: white; 
     transform: scale(1.1); 
 }
 

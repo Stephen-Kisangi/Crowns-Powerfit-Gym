@@ -23,4 +23,11 @@ scrollToTopButton.addEventListener('click', function () {
 });
 
 
+// JavaScript to handle the hamburger menu toggle
+document.querySelector('.hamburger').addEventListener('click', () => {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+});
+
+
 

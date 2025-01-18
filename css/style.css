@@ -33,7 +33,7 @@ header nav {
     justify-content: space-between;
     align-items: center;
 }
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 header nav .logo a {
     color: hsl(0, 23%, 95%);
     font-size: 32px;
@@ -58,6 +58,47 @@ header nav .nav-links li a {
 header nav .nav-links li a:hover {
     color: #04aa6d;
     border-bottom: 2px solid #04aa6d;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Hide nav links and show hamburger */
+    header nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #3e4338;
+        width: 100%;
+        padding: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    header nav .nav-links.show {
+        display: flex;
+    }
+
+    header nav .nav-links li {
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
 
 .hero {
@@ -213,7 +254,7 @@ header nav .nav-links li a:hover {
     flex: 1;
     margin-right: 20px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 .about-us {
     font-family: 'Dancing Script', cursive;
     background-color: #fff;
@@ -269,7 +310,7 @@ header nav .nav-links li a:hover {
 }
 
 .cta-button {
-    background-color: #ff9f00;
+    background-color: #d33212;
     color: white;
     font-size: 24px;
     padding: 20px 40px;
@@ -280,7 +321,7 @@ header nav .nav-links li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #ff6600;
+    background-color: #f39c12;
     transform: scale(1.1);
 }
 
@@ -295,8 +336,8 @@ header nav .nav-links li a:hover {
 
 .cta-link-box {
     display: inline-block;
-    background-color: #ff9f00;
-    padding: 20px 40px;
+    background-color: #d33212;
+    padding: 20px 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -316,7 +357,7 @@ header nav .nav-links li a:hover {
 }
 
 .cta-link:hover {
-    color: #ff6600;
+    color: black;
     text-decoration: underline;
 }
 
@@ -365,8 +406,8 @@ header nav .nav-links li a:hover {
 }
 
 footer {
-    background-color: #333;
-    color: #0b32f1;;
+    background-color: #2b2c2a;
+    color: white;
     padding: 20px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -416,7 +457,7 @@ footer {
 
 .social-media .social-link {
     display: block;
-    color: #0056b3; 
+    color: white; 
     font-size: 16px;
     font-family: 'Dancing Script', cursive;
     margin-top: 5px;
@@ -427,17 +468,17 @@ footer {
 }
 
 .social-media .social-link:hover {
-    color: #e67e22; 
+    color: #d33212; 
 }
 
 .scroll-to-top {
     position: fixed;
-    bottom: 30px; 
-    right: 30px;  
+    bottom: 10px; 
+    right: 10px;  
     background-color: white; 
     color: black;
-    font-size: 20px; 
-    padding: 20px 30px; 
+    font-size: 12px; 
+    padding: 10px 15px; 
     border-radius: 50%; 
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -450,11 +491,11 @@ footer {
 }
 
 .scroll-to-top i {
-    font-size: 40px; 
+    font-size: 15px; 
 }
 
 .scroll-to-top:hover {
-    background-color: black; 
+    background-color: white; 
     transform: scale(1.1); 
 }
 
@@ -467,7 +508,4 @@ html {
     opacity: 0; 
     pointer-events: none; 
 }
-
-
-
 

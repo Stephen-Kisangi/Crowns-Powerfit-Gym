@@ -23,6 +23,13 @@ body {
     margin: 0 auto;
 }
 
+/* Container styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header styles */
 header {
     background-color: #3e4338;
     padding: 16px 0;
@@ -46,8 +53,10 @@ header nav .logo a {
     font-size: 32px;
     text-decoration: none;
     font-weight: bold;
+    /*font-family: Cinzel;*/
 }
 
+/* Navigation links */
 header nav .nav-links {
     list-style: none;
     display: flex;
@@ -65,6 +74,47 @@ header nav .nav-links li a {
 header nav .nav-links li a:hover {
     color: #04aa6d;
     border-bottom: 2px solid #04aa6d;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Hide nav links and show hamburger */
+    header nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #3e4338;
+        width: 100%;
+        padding: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    header nav .nav-links.show {
+        display: flex;
+    }
+
+    header nav .nav-links li {
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
 
 .hero {
@@ -188,7 +238,7 @@ header nav .nav-links li a:hover {
 
 #map h3 {
     font-size: 2rem;
-    color: #333;
+    color: #d33212;
     margin-bottom: 20px;
     font-weight: 600;
     font-family: 'Lobster', cursive;
@@ -210,25 +260,29 @@ iframe {
 }
 
 .back-button {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Same background as the button */
     color: white;
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 12px 16px; /* Match padding with nav items */
+    font-size: 18px; /* Match font size */
     text-decoration: none;
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
     transition: background-color 0.3s ease;
+    cursor: pointer; /* Makes it clickable */
+    line-height: 1; /* Ensures height is the same as nav items */
 }
 
 .back-button:hover {
-    background-color: #00408d;
+    background-color: #00408d; /* Hover effect */
 }
 
 .back-arrow {
-    margin-right: 8px;
-    font-size: 20px;
+    margin-right: 8px; /* Spacing between the arrow and text */
+    font-size: 20px; /* Arrow size */
 }
+
+
 
 #slideshow-section .heading {
     text-align: center;
@@ -237,7 +291,7 @@ iframe {
 }
 
 #slideshow-section h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -403,7 +457,7 @@ iframe {
 
 .testimonials-section h2 {
     font-size: 2.5em;
-    color: #f39c12;
+    color: #d33212;
     margin-bottom: 30px;
     font-family: 'Lobster', cursive;
 }
@@ -416,7 +470,6 @@ iframe {
     flex-wrap: wrap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 .testimonial-card {
     background-color: #fff;
     border-radius: 10px;
@@ -487,7 +540,7 @@ iframe {
 #photo-grid h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
-    color: #f39c12;
+    color: #d33212;
     margin-bottom: 30px;
 }
 
@@ -533,11 +586,11 @@ iframe {
 }
 
 footer {
-    background-color: #333;
-    color: #0b32f1;;
+    background-color: #2b2c2a;
+    color: white;
     padding: 20px;
     text-align: center;
-    font-family: 'Lobster', cursive;
+    font-family: 'Dancing Script', cursive;
 }
 
 .footer-content {
@@ -584,7 +637,7 @@ footer {
 
 .social-media .social-link {
     display: block;
-    color: #0056b3; 
+    color: white; 
     font-size: 16px;
     font-family: 'Lobster', cursive;
     margin-top: 5px;
@@ -595,17 +648,17 @@ footer {
 }
 
 .social-media .social-link:hover {
-    color: #e67e22; 
+    color: #d33212; 
 }
 
 .scroll-to-top {
     position: fixed;
-    bottom: 30px; 
-    right: 30px;  
+    bottom: 10px; 
+    right: 10px;  
     background-color: white; 
     color: black;
-    font-size: 20px; 
-    padding: 20px 30px; 
+    font-size: 12px; 
+    padding: 10px 15px; 
     border-radius: 50%; 
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -618,11 +671,11 @@ footer {
 }
 
 .scroll-to-top i {
-    font-size: 40px; 
+    font-size: 15px; 
 }
 
 .scroll-to-top:hover {
-    background-color: black; 
+    background-color: white; 
     transform: scale(1.1); 
 }
 
@@ -635,3 +688,4 @@ html {
     opacity: 0; 
     pointer-events: none; 
 }
+

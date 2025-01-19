@@ -8,9 +8,21 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;  
+    line-height: 1.6;
+    background-image: url('../images/other/background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Container styles */
 .container {
     width: 90%;
     margin: 0 auto;

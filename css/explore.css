@@ -443,7 +443,8 @@ iframe {
 }
 
 .testimonials-section h2 {
-    font-size: 2.5em;
+    font-size: 20px;
+    font-weight: bold;
     color: #d33212;
     margin-bottom: 30px;
 }
@@ -482,13 +483,14 @@ iframe {
 
 
 .testimonial-card p {
-    font-size: 1.2em;
+    font-size: 20px;
     color: #555;
     margin-bottom: 20px;
 }
 
 .testimonial-card h3 {
-    font-size: 1.5em;
+    font-size: 1.0em;
+    text-align: center;
     color: #333;
     font-weight: bold;
 }
@@ -523,7 +525,8 @@ iframe {
 }
 
 #photo-grid h2 {
-    font-size: 3em;
+    font-size: 20px;
+    font-weight: bold;
     color: #d33212;
     margin-bottom: 30px;
 }

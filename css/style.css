@@ -292,7 +292,7 @@ header nav .nav-links li a:hover {
     font-size: 18px;
     color: #ff9f00;
     text-decoration: none;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .cta-link:hover {

@@ -574,31 +574,37 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    font-size: 14px;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    font-size: 14px;
 }
 
 .footer-content p {
     margin: 10px 0;
+    font-size: 14px;
 }
 
 .footer-content ul {
     list-style: none;
     padding: 0;
     margin: 10px 0;
+    font-size: 14px;
 }
 
 .footer-content ul li {
     display: inline;
     margin: 0 10px;
+    font-size: 14px;
 }
 
 .footer-content ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .social-media {
@@ -609,6 +615,7 @@ footer {
     margin: 0 15px; 
     display: inline-block;
     text-align: center;
+    font-size: 14px;
 }
 
 .social-media .social-icon {
@@ -616,13 +623,15 @@ footer {
     height: 30px;
     transition: transform 0.3s ease;
     margin-bottom: 5px; 
+    font-size: 14px;
 }
 
 .social-media .social-link {
     display: block;
     color: white; 
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 5px;
+    
 }
 
 .social-media .social-icon:hover {

@@ -297,7 +297,7 @@ header nav .nav-links li a:hover {
 
 .cta-link:hover {
     color: #ff6f00;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .cta-container {
@@ -311,7 +311,7 @@ header nav .nav-links li a:hover {
 .cta-button {
     background-color: #d33212;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     padding: 20px 40px;
     text-decoration: none;
     border-radius: 8px;
@@ -348,16 +348,16 @@ header nav .nav-links li a:hover {
 }
 
 .cta-link {
-    font-size: 28px;
+    font-size: 24px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .cta-link:hover {
     color: black;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .art-culture {

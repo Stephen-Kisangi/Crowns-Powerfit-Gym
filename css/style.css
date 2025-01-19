@@ -435,7 +435,7 @@ footer {
 }
 
 .footer-content ul li a {
-    color: #fff;
+    color: black;
     font-size: 14px;
     text-decoration: none;
 }
@@ -459,7 +459,7 @@ footer {
 
 .social-media .social-link {
     display: block;
-    color: white; 
+    color: black; 
     font-size: 14px;
     margin-top: 5px;
 }

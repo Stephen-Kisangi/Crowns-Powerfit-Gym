@@ -406,10 +406,9 @@ header nav .nav-links li a:hover {
 
 footer {
     background-color: #2b2c2a;
-    color: green;
+    color: #e0e0e0; /* Light gray for readable, professional text */
     padding: 20px;
     text-align: center;
-    
 }
 
 .footer-content {
@@ -435,9 +434,14 @@ footer {
 }
 
 .footer-content ul li a {
-    color: green;
+    color: #f0a500; /* Golden yellow for links */
     font-size: 14px;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+    color: #de4d68; /* Muted red-pink for hover effects */
 }
 
 .social-media {
@@ -459,9 +463,10 @@ footer {
 
 .social-media .social-link {
     display: block;
-    color: green; 
+    color: #f0a500; /* Golden yellow for social link text */
     font-size: 14px;
     margin-top: 5px;
+    transition: color 0.3s ease;
 }
 
 .social-media .social-icon:hover {
@@ -469,8 +474,9 @@ footer {
 }
 
 .social-media .social-link:hover {
-    color: #d33212; 
+    color: #de4d68; /* Muted red-pink for hover effect on social links */
 }
+
 
 .scroll-to-top {
     position: fixed;

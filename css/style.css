@@ -206,22 +206,6 @@ header nav .nav-links li a:hover {
     background-color: black;
 }
 
-    .hero-content h1 {
-        font-size: 36px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-
-    }
-
-    .explore-btn {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-}
-
-
     .about-us-section {
         flex-direction: column;
         padding: 40px 20px;

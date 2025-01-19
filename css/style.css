@@ -405,7 +405,7 @@ header nav .nav-links li a:hover {
 }
 
 footer {
-    background-color: #2b2c2a;
+    background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
@@ -457,7 +457,7 @@ footer {
 .social-media .social-link {
     display: block;
     color: white; 
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 5px;
 }
 

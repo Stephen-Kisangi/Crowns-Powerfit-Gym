@@ -281,15 +281,14 @@ header nav .nav-links li a:hover {
 }
 
 footer {
-    background-color:#3e4338;
-    font-size: 14px;
-    color: white;
+    background-color: #2b2c2a;
+    color: #e0e0e0; /* Light gray for readable, professional text */
     padding: 20px;
     text-align: center;
 }
 
 .footer-content {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     font-size: 14px;
 }
@@ -303,56 +302,57 @@ footer {
     list-style: none;
     padding: 0;
     margin: 10px 0;
-    font-size: 14px;
 }
 
 .footer-content ul li {
     display: inline;
     margin: 0 10px;
-    font-size: 14px;
 }
 
 .footer-content ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #f0a500; /* Golden yellow for links */
     font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+    color: #de4d68; /* Muted red-pink for hover effects */
 }
 
 .social-media {
     margin-top: 20px;
-    font-size: 14px;
 }
 
 .social-media a {
-    margin: 0 15px;
+    margin: 0 15px; 
     display: inline-block;
     text-align: center;
-    font-size: 14px;
 }
 
 .social-media .social-icon {
-    width: 30px;
+    width: 30px; 
     height: 30px;
     transition: transform 0.3s ease;
-    margin-bottom: 5px;
-    font-size: 14px;
+    margin-bottom: 5px; 
 }
 
 .social-media .social-link {
     display: block;
-    color: white;
-    font-size: 16px;
-    margin-top: 5px;
+    color: #f0a500; /* Golden yellow for social link text */
     font-size: 14px;
+    margin-top: 5px;
+    transition: color 0.3s ease;
 }
 
 .social-media .social-icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .social-media .social-link:hover {
-    color: #d33212;
+    color: #de4d68; /* Muted red-pink for hover effect on social links */
 }
+
 
 @media (max-width: 768px) {
     header nav {

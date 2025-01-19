@@ -226,7 +226,7 @@ header nav .nav-links li a:hover {
 }
 
 #map h3 {
-    font-size: 2rem;
+    font-size: 26px;
     color: #d33212;
     margin-bottom: 20px;
     font-weight: 600;
@@ -443,7 +443,7 @@ iframe {
 }
 
 .testimonials-section h2 {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
     color: #d33212;
     margin-bottom: 30px;
@@ -489,7 +489,7 @@ iframe {
 }
 
 .testimonial-card h3 {
-    font-size: 1.0em;
+    font-size: 1.2em;
     text-align: center;
     color: #333;
     font-weight: bold;

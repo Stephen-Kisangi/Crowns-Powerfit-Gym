@@ -119,7 +119,7 @@ header nav .nav-links li a:hover {
 }
 
 .hero {
-    background-image: url('../images/other/hero.jpg');
+    background-image: url('../images/slideshow/slideshow6.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -204,6 +204,32 @@ header nav .nav-links li a:hover {
     background-color: #f39c12;
 }
 
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header nav .nav-links {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .explore-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
 
     .about-us-section {
         flex-direction: column;

@@ -204,19 +204,6 @@ header nav .nav-links li a:hover {
     background-color: #f39c12;
 }
 
-@media (max-width: 768px) {
-    header nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    header nav .nav-links {
-        flex-direction: column;
-        gap: 16px;
-        width: 100%;
-        text-align: center;
-    }
-
     .hero-content h1 {
         font-size: 36px;
     }
